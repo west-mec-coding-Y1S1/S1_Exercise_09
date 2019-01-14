@@ -61,7 +61,7 @@
             <legend>Customer Information</legend>
             <div class="formRow">
                <label for="name">Name*</label>
-               <input type="text" name="custName" id="name" placeholder="first and last name" />
+               <input type="text" name="custName" id="name" placeholder="first and last name" required />
             </div>
 
             <div class="formRow">
@@ -81,17 +81,17 @@
 
             <div class="formRow">
                <label for="zip">Postal Code</label>
-               <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" />
+               <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
             </div>
 
             <div class="formRow">
                <label for="phone">Phone Number</label>
-               <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnnn" />
+               <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
 
             <div class="formRow">
                <label for="email">E-mail*</label>
-               <input name="custEmail" id="email" type="text" />
+               <input name="custEmail" id="mail" type="email" required />
             </div>
 
             <div class="formRow">
